@@ -1,0 +1,18 @@
+package com.cracckify.productservice.exception;
+
+import lombok.*;
+
+import java.time.Instant;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ApiErrorResponse {
+    private Instant timestamp;
+    private int status;
+    private String error;
+    private String message;
+    private String path;
+}
